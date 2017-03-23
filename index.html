@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/swiper-3.4.1.min.css"/>
+    <link rel="stylesheet" href="css/jump.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+
+</head>
+<body>
+<div class="header">
+    <div class="header_wrap">
+        <a class="logo" href="#"><img src="images/logo_zh.png" alt=""/></a>
+        <div class="language">
+            <img class="language_img" src="images/language_zh.png" alt=""/>
+            <span class="language_txt">简体中文</span>
+            <i></i>
+
+            <div class="language_list">
+                <p></p>
+                <ul>
+                    <li style="background-image:url(images/icon_gq_mg.png);" onclick="switch_lang('en')">English</li>
+                    <li style="background-image:url(images/icon_gq_zg.png);" onclick="switch_lang('zh')">简体中文</li>
+                </ul>
+            </div>
+        </div>
+        <form class="login" action="#">
+            <div class="login_regist">
+                <a href="#" class="regist">未注册？</a>
+            </div>
+            <div class="login_submit">
+                <input type="button" value="登录"/>
+
+            </div>
+            <div class="login_pwd">
+                <input type="text" placeholder=" 密码"/>
+
+                <p class="forget_pwd">
+                    <a href="#">忘记密码？</a>
+                </p>
+            </div>
+            <div class="login_name">
+                <input type="text" placeholder=" 邮箱/手机"/>
+
+                <div class="login_auto">
+                    <p><input type="checkbox" id="login_auto_cb"/></p>
+                    <label for="login_auto_cb" class="auto_login_txt">下次自动登录</label>
+                </div>
+            </div>
+            <a href="#" class="help">
+                <img src="images/help_bg_zh.png" alt=""/>
+                <!--MyTotalWorld帮助中心-->
+            </a>
+        </form>
+        <div class="loginwith">
+            <a href="#" class="more_bt"><img src="images/more.png" alt=""/></a>
+            <a href="#" class="qq_bt"><img src="images/qq.png" alt=""/></a>
+            <a href="#" class="weixin_bt"><img src="images/weixin.png" alt=""/></a>
+            <a href="#" class="twitter_bt"><img src="images/twitter.png" alt=""/></a>
+            <a href="#" class="face_bt"><img src="images/facebook.png" alt=""/></a>
+
+            <p>合作网站登录</p>
+
+
+            <!--<a href="#" class="share_bt"><img src="images/share.png" alt=""/></a>-->
+        </div>
+        <div class="inner">
+            <div class="mt">合作网站登录</div>
+            <div class="mc">
+                <ul>
+                    <li>
+                        <a href="javascript:;" onclick="fackbooklogin()"><img
+                                src="images/logo_facebook.png">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" onclick="getTwitterCode()"><img src="images/logo_twitter.png">Twitter</a>
+                    </li>
+                    <!--
+
+                    <li>
+                        <a href="javascript:;" class="btn_loginshow5" ><img src="images/logo_yahoo.png">Yahoo</a>
+                    </li> -->
+                    <!--
+                    <li>
+                        <a href="javascript:;" class="btn_loginshow5"><img src="images/logo_whatsapp.png">WhatsApp</a>
+                    </li>
+                     -->
+                    <li>
+                        <a href="javascript:;" onclick="lineLogin()"><img src="images/logo_line.png">Line</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" onclick="googleLogin()"><img src="images/google.png">google</a>
+                    </li>
+                    <!--
+                    <li>
+                        <a href="javascript:;" class="btn_loginshow5" ><img src="images/logo_viber.png">Viber
+                    </li>
+                     -->
+                    <li>
+                        <a href="javascript:;" onclick="instagramLogin()"><img src="images/instagram.png">Instagram</a>
+                    </li>
+                    <!--
+                    <li>
+                        <a href="javascript:;" class="btn_loginshow5" ><img src="images/pinterest.png">Pinterest</a>
+                    </li>
+                     -->
+                    <li>
+                        <a href="javascript:;" onclick="vklogin()"><img src="images/vk.png">VK</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" onclick="OpenLinked()"><img src="images/linkedin.png">Linkedin</a>
+                    </li>
+
+                    <li>
+                        <a href="javascript:;" onclick="OpenWXLogin()"><img src="images/logo_weixin.png">Wechat</a>
+                    </li>
+                    <!-- OpenWXLogin() -->
+                    <li>
+                        <a href="javascript:;" onclick="OpenQQLogin()">
+                            <img src="images/logo_qq.png">QQ
+                        </a>
+                    </li>
+                    <!-- OpenQQLogin() -->
+
+                    <li>
+                        <a href="javascript:;" onclick="OpenSinaWeiboLogin()">
+                            <img src="images/logo_weibo.png">Weibo
+                        </a>
+                    </li>
+                    <!-- OpenSinaWeiboLogin() -->
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="main">
+    <div class="banner" style="width: 100%;margin:0 auto;text-align: center;">
+        <div class="swiper-container banner_swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#"><img src="images/banner1.jpg" alt="img" style="width: 100%;"/></a>
+                    <!--<h2>致力印刷 引领行业</h2>-->
+                </div>
+                <div class="swiper-slide"><a href="#"><img src="images/banner2.jpg" alt="img" style="width: 100%;"/></a>
+                    <!--<h2>设备先进 质量保证</h2>-->
+                </div>
+                <div class="swiper-slide"><a href="#"><img src="images/banner1.jpg" alt="img" style="width: 100%;"/></a>
+                    <!--<h2>致力印刷 引领行业</h2>-->
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <!--<div class="swiper-pagination"></div>-->
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev" style="left:26px; background-image: url(images/banner_bt1.png);"></div>
+            <div class="swiper-button-next" style="right:26px;background-image: url(images/banner_bt2.png);"></div>
+        </div>
+        <!--<img class="banner_bg" src="images/banner_bg.png" alt=""/>-->
+    </div>
+
+    <div class="content">
+        <ul class="sect_img restwrap">
+            <li>
+                <img class="sect_img_item" src="images/set_img1_zh.jpg" usemap="#map1" alt=""/>
+
+                <p class="set_img1_bts">
+                    <a href=""><img src="images/set_img1_zuo_zh.png" alt=""/></a>
+                    <a href=""><img src="images/set_img1_zhong_zh.png" alt=""/></a>
+                    <a href=""><img src="images/set_img1_you_zh.png" alt=""/></a>
+                </p>
+            </li>
+            <li class="spliter"></li>
+            <li style="background: #eae6e3">
+                <!--<img class="sect_img_item" src="images/set_img2_zh.png" alt="" class="liu"/>-->
+                <!--<div class="jump">-->
+                <!--<img src="images/1.png" alt="" class="yi"/>-->
+                <!--<img src="images/2.png" alt="" class="er"/>-->
+                <!--<img src="images/3.png" alt="" class="san"/>-->
+                <!--<img src="images/4_zh.png" alt="" class="si"/>-->
+                <!--<img src="images/5.png" alt="" class="wu"/>-->
+                <!--<img src="images/set_img2_zh.png" alt="" class="liu"/>-->
+                <!--</div>-->
+                <!--<a href="#"><img class="jump_over" src="images/set_img2_title_zh.png" alt="" class="liu"/></a>-->
+
+                <img class="sect_img_item" src="images/set_img2_title_zh.gif" alt="" class="liu"/>
+                <a href="#" class="sect_img2_a"></a>
+            </li>
+            <li class="spliter"></li>
+            <li>
+                <img class="sect_img_item" src="images/set_img3_zh.jpg" usemap="#map3" alt=""/>
+                <!--<map name="map3" id="map3">-->
+                    <!--<area shape="rect" coords="0,0,490,490" href="#" target="_blank" alt="Sun"/>-->
+                <!--</map>-->
+            </li>
+        </ul>
+    </div>
+    <div class="footer">
+        <img src="images/footer_marke_zh.png" class="footer_marke" alt=""/>
+        <!--<p class="Copyright">Copyright @ 2014 MyTotalWorld Ltd. 版权所有。用户协议 及 隐私权保护规则。</p>-->
+    </div>
+</div>
+
+
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<!--<script type="text/javascript" src="js/swiper-3.4.1.min.js"></script>-->
+<script type="text/javascript" src="js/swiper-3.4.1.jquery.min.js"></script>
+<script type="text/javascript" src="js/jump.js"></script>
+<script>
+    /*语言按钮*/
+    $('.language').hover(function () {
+        $(this).find('.language_list').show();
+    }, function () {
+        setTimeout(function () {
+            $(this).find('.language_list').hide();
+        },400);
+    });
+    $('.language_list').hover(function () {
+        $(this).show();
+    }, function () {
+        $(this).hide();
+    })
+    /*more按钮*/
+    $('.more_bt').toggle(function () {
+        $('.inner').show();
+    }, function () {
+        $('.inner').hide();
+    });
+
+    /*轮播图效果*/
+    var swiper1 = new Swiper('.banner_swiper', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        autoplay: 5000,
+        loop: true,
+        effect: 'slide'
+    });
+    $('.banner').hover(function () {
+        swiper1.stopAutoplay();
+    }, function () {
+        swiper1.startAutoplay();
+    });
+    /**
+     *切换语言按钮
+     * @param {'en'|'zh'} 语言类型参数
+     */
+    function switch_lang(language) {
+        $('.language_txt').html(language == 'en' ? 'English' : '简体中文');
+        //进行相应操作
+        /*切换中英文图片*/
+        $('img').each(function (i) {
+            var sOringLunguage = language == 'en' ? 'zh' : 'en';
+            if (this.src.indexOf('_' + sOringLunguage + '.') >= 0) {
+                $(this).attr('src', this.src.replace('_' + sOringLunguage + '.', '_' + language + '.'));
+            }
+        });
+        /*以下内容到时候做国际化就不需要了*/
+        /*切换中英文字*/
+//        $('.help').html(language == 'en' ? 'How to use MyTotalWorld' : 'MyTotalWorld帮助中心');
+        $('.login_name input').attr('placeholder', language == 'en' ? 'Email/Mobile' : '邮箱/手机');
+        $('.login_pwd input').attr('placeholder', language == 'en' ? 'Password' : '密码');
+        $('.login_submit input').attr('value', language == 'en' ? 'Sign in' : '登录');
+        $('.regist').html(language == 'en' ? 'Resiste Now?' : '未注册？');
+        $('.auto_login_txt').html(language == 'en' ? 'Stay signed in?' : '下次自动登录？');
+        $('.forget_pwd a').html(language == 'en' ? 'Forgot Password?' : '忘记密码？');
+        $('.loginwith p,.inner .mt').html(language == 'en' ? 'Login With&nbsp;' : '合作网站登录&nbsp;');
+//        $('.inner .mt').html(language == 'en' ? 'Login With' : '合作网站登录');
+
+        /*footer文字*/
+//        var sHtmlZh = 'Copyright @ 2014 MyTotalWorld Ltd. 版权所有。用户协议 及 隐私权保护规则。';
+//        var sHtmlEn = 'Copyright © 2016 MyTotalWorld Inc. All Rights Reserved.User Agreement, Privacy and Cookies.';
+//        $('.Copyright').html(language == 'en' ? sHtmlEn : sHtmlZh);
+
+
+    }
+</script>

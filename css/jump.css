@@ -1,0 +1,25 @@
+.jump {
+    width: 490px;
+    height: 490px;
+    margin:0 auto;
+    position: relative;
+    background: #eae6e3;
+    overflow: hidden;
+}
+.jump img {
+    width: 490px;
+    height: 490px;
+    left:0;
+    top: 0;
+    position: absolute;
+}
+
+.jump img.san,.jump img.er {
+    opacity: 0;
+    filter:alpha(Opacity=0);
+
+}
+.jump img.wu{
+    opacity:0.2;
+    filter:alpha(Opacity=20);
+}
